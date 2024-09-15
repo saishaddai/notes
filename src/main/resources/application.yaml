@@ -1,0 +1,28 @@
+server:
+  port: 8080
+spring:
+  application:
+    name: notes
+  output:
+    ansi:
+      enabled: ALWAYS
+  datasource:
+    url: jdbc:h2:file:${user.home}/notes/db
+    username: sa
+    password: sa
+  jpa:
+    hibernate:
+      ddl-auto: 'create-drop'
+
+
+#logging:
+#  level:
+#    org:
+#      hibernate:
+#        SQL: DEBUG
+#        type:
+#          descriptor
+#        sql:
+#          BasicBinder: TRACE
+#    sql:
+
